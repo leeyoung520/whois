@@ -1,5 +1,6 @@
 import { EditHistory } from "../../common/component/History";
 import { createReducer, setValueReducer } from "../../common/redux-helper";
+import { AuthStatus } from '../../common/constant';
 
 
 // 액션 타입 선언
@@ -24,6 +25,7 @@ export type User = {
     name: string;
     department: string;
     tag: string;
+    status: string,
 }
 
 export type SearchState = {

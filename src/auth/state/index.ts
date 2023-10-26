@@ -36,7 +36,7 @@ import {
   
   const INITIAL_STATE = {
     name: '',
-    status: undefined,
+    status: AuthStatus.NotLogin ,
   };
   const reducer = createReducer(INITIAL_STATE, {
     [Types.SetValue]: setValueReducer,
